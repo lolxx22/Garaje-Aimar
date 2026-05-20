@@ -1,0 +1,143 @@
+@page {
+  size: var(--ticket-width) auto;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    width: var(--ticket-width);
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .hero-panel,
+  .left-stack,
+  .history-card,
+  .preview-card > .section-heading {
+    display: none !important;
+  }
+
+  .app-shell,
+  .layout-grid,
+  .preview-card {
+    display: block !important;
+    width: var(--ticket-width) !important;
+    max-width: var(--ticket-width) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+  }
+
+  body * { visibility: hidden !important; }
+
+  #print-area, #print-area * { visibility: visible !important; }
+
+  #print-area {
+    position: static !important;
+    left: 0;
+    top: 0;
+    display: block !important;
+    width: var(--ticket-width) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: #fff !important;
+  }
+
+  .thermal-ticket {
+    width: var(--ticket-width) !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 3mm 2.5mm !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+    font-family: "Courier New", monospace !important;
+    font-size: 10px !important;
+    font-weight: 900 !important;
+  }
+
+  .ticket-header h3 {
+    font-size: 12px !important;
+    margin-bottom: 5px !important;
+    font-weight: 900 !important;
+  }
+
+  .ticket-logo {
+    display: block !important;
+    width: 13mm !important;
+    height: 13mm !important;
+    margin: 0 auto 2mm !important;
+    object-fit: contain !important;
+    filter: grayscale(1) contrast(2) !important;
+    print-color-adjust: exact !important;
+  }
+
+  .ticket-header p, .rates-grid div, .notice, .warning, .thanks, .ticket-row {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+    font-weight: 900 !important;
+  }
+
+  .ticket-plate-block {
+    margin: 3mm 0 !important;
+    padding: 2mm 0 !important;
+    text-align: center !important;
+  }
+
+  .ticket-plate-block span {
+    font-size: 10px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.24em !important;
+  }
+
+  .ticket-plate-block strong {
+    display: block !important;
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.18em !important;
+    line-height: 1 !important;
+  }
+
+  .rates {
+    display: grid !important;
+    gap: 1.4mm !important;
+  }
+
+  .rates h4 {
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .rates-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    column-gap: 2mm !important;
+    row-gap: 1.2mm !important;
+  }
+
+  .rates-grid div {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    gap: 1mm !important;
+  }
+
+  .rates strong { font-weight: 900 !important; text-align: right !important; }
+
+  .warning { font-size: 9px !important; }
+
+  .ticket-row { margin: 6px 0 !important; }
+  .ticket-line { border-top: 2px dashed #000 !important; margin: 8px 0 !important; }
+  .thermal-ticket small { font-size: 9px !important; font-weight: 900 !important; }
+}
