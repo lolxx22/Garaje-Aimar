@@ -16,7 +16,7 @@ export function renderTicketHistory(tickets: Ticket[]): string {
         </td>
       </tr>
     `).join('')
-    : '<tr><td colspan="5" class="empty-state">Todavia no hay tickets generados.</td></tr>'
+    : '<tr><td colspan="5" class="empty-state">Todavía no hay tickets generados.</td></tr>'
 
   return `
     <section class="card history-card" aria-labelledby="history-title">

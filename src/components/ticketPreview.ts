@@ -35,15 +35,11 @@ export function renderTicketPreview(ticket: Ticket | null, settings: GarageSetti
 
           <div class="ticket-row"><strong>FECHA:</strong><span>${ticket ? escapeHtml(ticket.fecha) : empty}</span></div>
           <div class="ticket-row"><strong>HORA DE INGRESO:</strong><span>${ticket ? escapeHtml(ticket.horaIngreso) : empty}</span></div>
-          <div class="ticket-row"><strong>HORA DE SALIDA:</strong><span>${ticket?.horaSalida ? escapeHtml(ticket.horaSalida) : ''}</span></div>
-          <div class="ticket-row"><strong>VALOR:</strong><span>${ticket?.valor ? escapeHtml(ticket.valor) : ''}</span></div>
-          <div class="ticket-line"></div>
-
           <div class="rates">
             <h4>HORA/FRACCION</h4>
             <div class="rates-grid">
               <div><span>Moto</span><strong>$1.00</strong></div>
-              <div><span>Carro pequeno</span><strong>$1.50</strong></div>
+              <div><span>Carro pequeño</span><strong>$1.50</strong></div>
               <div><span>Carro grande</span><strong>$2.00</strong></div>
               <div><span>Camion</span><strong>$5.00</strong></div>
             </div>
@@ -51,7 +47,7 @@ export function renderTicketPreview(ticket: Ticket | null, settings: GarageSetti
 
           <div class="ticket-line"></div>
           <p class="warning">Ticket extraviado: multa de $5.00.</p>
-          <p class="warning">Para retirar el vehiculo debe presentar matricula y cedula.</p>
+          <p class="warning">Para retirar el vehículo debe presentar matrícula y cédula.</p>
           <p class="notice">No nos responsabilizamos por objetos extraviados.</p>
           <p class="thanks">Gracias por su visita.</p>
           <small>${ticket ? escapeHtml(ticket.id) : 'TCK-0000'}</small>

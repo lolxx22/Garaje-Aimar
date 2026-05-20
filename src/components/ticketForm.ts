@@ -15,17 +15,16 @@ export function renderTicketForm(errors: string[] = [], message = '', canPrint =
       ${message ? `<div class="success" role="status">${message}</div>` : ''}
 
       <form id="ticket-form" class="ticket-form" novalidate>
-        <label for="placa">Placa del vehiculo</label>
+        <label for="placa">Placa del vehículo</label>
         <input id="placa" name="placa" type="text" autocomplete="off" placeholder="GSW-3241" maxlength="12" aria-describedby="plate-help" required />
-        <small id="plate-help" class="field-help">Se guardara automaticamente en mayusculas.</small>
-        </label>
-        <div class="auto-info" aria-label="Fecha y hora automaticas">
+        <small id="plate-help" class="field-help">Se guardará automáticamente en mayúsculas. Usa solo letras, números y guiones.</small>
+        <div class="auto-info" aria-label="Fecha y hora automáticas">
           <div>
-            <span>Fecha automatica</span>
+            <span>Fecha automática</span>
             <strong>${todayForInput()}</strong>
           </div>
           <div>
-            <span>Hora automatica</span>
+            <span>Hora automática</span>
             <strong>${timeForInput()}</strong>
           </div>
         </div>

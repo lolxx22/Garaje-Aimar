@@ -3,7 +3,6 @@ import type { GarageSettings } from '../types/settings.types'
 import type { Ticket } from '../types/ticket.types'
 
 const TICKETS_KEY = 'garage-aimar:tickets'
-const MAX_STORED_TICKETS = 20
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -23,7 +22,7 @@ export function getTickets(): Ticket[] {
 }
 
 export function saveTickets(tickets: Ticket[]): void {
-  writeJson(TICKETS_KEY, tickets.slice(0, MAX_STORED_TICKETS))
+  writeJson(TICKETS_KEY, tickets)
 }
 
 export function addTicket(ticket: Ticket): void {

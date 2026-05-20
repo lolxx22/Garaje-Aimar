@@ -5,7 +5,7 @@ import type { GarageSettings } from './types/settings.types'
 import type { Ticket, TicketDraft } from './types/ticket.types'
 import { formatDateForTicket, timeForInput, todayForInput } from './utils/formatDate'
 import { printTicket } from './utils/print'
-import { addTicket, clearTickets, getSettings, getTickets, nextTicketId } from './utils/storage'
+import { addTicket, getSettings, getTickets, nextTicketId } from './utils/storage'
 import { normalizePlate, validateTicketDraft } from './utils/validators'
 
 export class GarageAimarApp {
@@ -20,7 +20,6 @@ export class GarageAimarApp {
     const root = document.querySelector<HTMLElement>(selector)
     if (!root) throw new Error(`No se encontro el contenedor ${selector}`)
     this.root = root
-    clearTickets()
     this.load()
     this.render()
   }
@@ -41,7 +40,7 @@ export class GarageAimarApp {
             <div>
               <span class="eyebrow"></span>
               <h1>Garage Aimar</h1>
-              <p class="hero-tagline">Protección y seguridad para tu vehiculo, 24/7.</p>
+              <p class="hero-tagline">Protección y seguridad para tu vehículo, 24/7.</p>
               <p>Genera, guarda e imprime tus tickets de manera segura.</p>
             </div>
           </div>
@@ -108,8 +107,6 @@ export class GarageAimarApp {
       placa: draft.placa,
       fecha: formatDateForTicket(draft.fecha),
       horaIngreso: draft.horaIngreso,
-      horaSalida: '',
-      valor: '',
       createdAt: new Date(`${draft.fecha}T${draft.horaIngreso}:00`).toISOString(),
     }
 

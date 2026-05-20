@@ -1,25 +1,24 @@
 # Garage Aimar - Parking Ticket
 
-Sistema web profesional para generar, guardar e imprimir tickets de ingreso para un garaje/parqueadero. Esta construido con HTML5, CSS3, TypeScript y Vite, sin backend ni base de datos tradicional.
+Sistema web profesional para generar, guardar e imprimir tickets de ingreso para un garaje/parqueadero. Está construido con HTML5, CSS3, TypeScript y Vite, sin backend ni base de datos tradicional.
 
 ## Funcionalidades
 
 - Formulario simple para ingresar solo la placa.
-- Fecha y hora de ingreso generadas automaticamente desde el sistema.
-- Cada recarga de la pagina inicia el contador y los tickets desde cero.
-- Conversion automatica de placa a mayusculas.
+- Fecha y hora de ingreso generadas automáticamente desde el sistema.
+- El contador de tickets se mantiene entre recargas de la página.
+- Conversión automática de placa a mayúsculas.
 - Validaciones claras para campos obligatorios.
-- Vista previa del ticket en formato termico/POS.
-- Impresion con `window.print()` y CSS `@media print`.
-- Impresion exclusiva del ticket, sin formulario ni botones.
+- Vista previa del ticket en formato térmico/POS.
+- Impresión con `window.print()` y CSS `@media print`.
+- Impresión exclusiva del ticket, sin formulario ni botones.
 - Tickets guardados internamente como JSON en `localStorage`.
-- Durante la sesion, el almacenamiento conserva automaticamente los ultimos 20 tickets y elimina los mas antiguos.
-- Tarjeta fija con la informacion de Garage Aimar.
+- Tarjeta fija con la información de Garage Aimar.
 - Dashboard oscuro, responsive y moderno.
 
 ## AutoSkills
 
-Antes de ajustar o extender el diseno frontend se recomienda ejecutar:
+Antes de ajustar o extender el diseño frontend se recomienda ejecutar:
 
 ```bash
 npx autoskills@latest
@@ -31,7 +30,7 @@ Selecciona las skills:
 - `accessibility`
 - `seo`
 
-El proyecto aplica buenas practicas asociadas: estructura semantica, estados visibles, contraste alto, etiquetas accesibles, meta descripcion y experiencia responsive.
+El proyecto aplica buenas prácticas asociadas: estructura semántica, estados visibles, contraste alto, etiquetas accesibles, meta descripción y experiencia responsive.
 
 ## Estructura
 
@@ -59,7 +58,7 @@ parking-ticket/
 │   ├── data/
 │   │   └── defaultSettings.ts
 │   ├── app.ts
-│   └── main.ts
+│   └── index.ts
 ├── index.html
 ├── package.json
 ├── tsconfig.json
@@ -69,14 +68,14 @@ parking-ticket/
 
 ## Carpetas
 
-- `src/components`: renderizado de formulario, vista previa e informacion del garaje.
-- `src/styles`: estilos visuales del dashboard y reglas optimizadas de impresion POS.
+- `src/components`: renderizado de formulario, vista previa e información del garaje.
+- `src/styles`: estilos visuales del dashboard y reglas optimizadas de impresión POS.
 - `src/types`: contratos TypeScript para tickets y datos del garaje.
-- `src/utils`: localStorage, impresion, fechas y validaciones.
-- `src/data`: informacion predeterminada de Garage Aimar.
-- `public`: archivos estaticos como logo.
+- `src/utils`: localStorage, impresión, fechas y validaciones.
+- `src/data`: información predeterminada de Garage Aimar.
+- `public`: archivos estáticos como logo.
 
-## Instalacion
+## Instalación
 
 ```bash
 npm install
@@ -88,7 +87,7 @@ npm install
 npm run dev
 ```
 
-## Compilar para produccion
+## Compilar para producción
 
 ```bash
 npm run build
@@ -96,8 +95,8 @@ npm run build
 
 ## Flujo de uso
 
-1. Abre la pagina.
-2. Ingresa la placa del vehiculo.
+1. Abre la página.
+2. Ingresa la placa del vehículo.
 3. Haz clic en `Generar ticket`.
 4. Revisa la vista previa.
 5. Imprime el ticket.
@@ -113,12 +112,10 @@ Cada ticket se guarda en `localStorage` con esta estructura:
   "placa": "GSW-3241",
   "fecha": "19/05/2026",
   "horaIngreso": "15:28",
-  "horaSalida": "",
-  "valor": "",
   "createdAt": "2026-05-19T15:28:00.000Z"
 }
 ```
 
-## Impresion POS
+## Impresión POS
 
-La impresion esta configurada en `src/styles/print.css` para imprimir solo `#print-area` en formato termico de 58mm.
+La impresión está configurada en `src/styles/print.css` para imprimir solo `#print-area` en formato térmico de 80mm.

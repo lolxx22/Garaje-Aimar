@@ -7,7 +7,7 @@ export function renderSettingsPanel(settings: GarageSettings): string {
       <div class="section-heading">
         <div>
           <span class="eyebrow">Datos fijos</span>
-          <h2 id="garage-info-title">Informacion del garaje</h2>
+          <h2 id="garage-info-title">Información del garaje</h2>
         </div>
       </div>
       <div class="garage-info">
