@@ -37,7 +37,7 @@ export class GarageAimarApp {
       <main class="app-shell">
         <header class="hero-panel">
           <div class="brand-block">
-            <img class="brand-logo" src="/logo.svg" alt="Logo de Garage Aimar" width="72" height="72" />
+            <img class="brand-logo" src="${import.meta.env.BASE_URL}logo.svg" alt="Logo de Garage Aimar" width="72" height="72" />
             <div>
               <span class="eyebrow"></span>
               <h1>Garage Aimar</h1>

@@ -5,6 +5,7 @@ import { escapeHtml } from '../utils/escapeHtml'
 export function renderTicketPreview(ticket: Ticket | null, settings: GarageSettings): string {
   const empty = '<span class="ticket-empty">Pendiente</span>'
   const widthClass = 'ticket-80'
+  const logoUrl = `${import.meta.env.BASE_URL}logo.svg`
 
   return `
     <section class="card preview-card" aria-labelledby="preview-title">
@@ -19,7 +20,7 @@ export function renderTicketPreview(ticket: Ticket | null, settings: GarageSetti
       <div id="print-area" class="ticket-shell ${widthClass}" aria-live="polite">
         <article class="thermal-ticket">
           <header class="ticket-header">
-            <img class="ticket-logo" src="/logo.svg" alt="" aria-hidden="true" />
+            <img class="ticket-logo" src="${logoUrl}" alt="" aria-hidden="true" />
             <h3>${escapeHtml(settings.garageName)}</h3>
             <p>${escapeHtml(settings.address)}</p>
             <p>Cel: ${escapeHtml(settings.phone)}</p>
