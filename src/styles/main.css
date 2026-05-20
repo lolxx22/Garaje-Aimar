@@ -289,7 +289,7 @@ input:focus, select:focus {
 .rates { display: grid; gap: 7px; text-align: left; }
 .rates h4 { margin: 0; text-align: center; font-size: 0.82rem; font-weight: 900; letter-spacing: 0.12em; }
 .rates-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8px; row-gap: 5px; }
-.rates-grid div { display: grid; grid-template-columns: 1fr auto; gap: 4px; align-items: baseline; }
+.rates-grid div { display: grid; grid-template-columns: max-content max-content; justify-content: center; gap: 6px; align-items: baseline; }
 .rates strong { font-weight: 900; text-align: right; }
 .notice, .warning, .thanks { text-align: center; font-weight: 900; }
 .warning { font-size: 0.74rem; }

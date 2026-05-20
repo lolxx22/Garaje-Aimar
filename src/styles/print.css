@@ -129,8 +129,9 @@
 
   .rates-grid div {
     display: grid !important;
-    grid-template-columns: 1fr auto !important;
-    gap: 1mm !important;
+    grid-template-columns: max-content max-content !important;
+    justify-content: center !important;
+    gap: 1.3mm !important;
   }
 
   .rates strong { font-weight: 900 !important; text-align: right !important; }
