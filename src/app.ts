@@ -107,6 +107,8 @@ export class GarageAimarApp {
       placa: draft.placa,
       fecha: formatDateForTicket(draft.fecha),
       horaIngreso: draft.horaIngreso,
+      horaSalida: '',
+      valor: '',
       createdAt: new Date(`${draft.fecha}T${draft.horaIngreso}:00`).toISOString(),
     }
 

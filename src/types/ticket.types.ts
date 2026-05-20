@@ -3,6 +3,8 @@ export interface Ticket {
   placa: string
   fecha: string
   horaIngreso: string
+  horaSalida: string
+  valor: string
   createdAt: string
 }
 

@@ -35,6 +35,10 @@ export function renderTicketPreview(ticket: Ticket | null, settings: GarageSetti
 
           <div class="ticket-row"><strong>FECHA:</strong><span>${ticket ? escapeHtml(ticket.fecha) : empty}</span></div>
           <div class="ticket-row"><strong>HORA DE INGRESO:</strong><span>${ticket ? escapeHtml(ticket.horaIngreso) : empty}</span></div>
+          <div class="ticket-row"><strong>HORA DE SALIDA:</strong><span>${ticket?.horaSalida ? escapeHtml(ticket.horaSalida) : ''}</span></div>
+          <div class="ticket-row"><strong>VALOR:</strong><span>${ticket?.valor ? escapeHtml(ticket.valor) : ''}</span></div>
+          <div class="ticket-line"></div>
+
           <div class="rates">
             <h4>HORA/FRACCION</h4>
             <div class="rates-grid">
