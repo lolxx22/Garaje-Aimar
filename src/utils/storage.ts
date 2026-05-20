@@ -49,3 +49,8 @@ export function nextTicketId(): string {
   sessionStorage.setItem(TICKET_COUNTER_KEY, String(next))
   return `TCK-${String(next).padStart(4, '0')}`
 }
+
+export function getSessionTicketCount(): number {
+  const current = Number(sessionStorage.getItem(TICKET_COUNTER_KEY) ?? '0')
+  return Number.isFinite(current) ? current : 0
+}

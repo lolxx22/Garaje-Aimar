@@ -5,7 +5,7 @@ import type { GarageSettings } from './types/settings.types'
 import type { Ticket, TicketDraft } from './types/ticket.types'
 import { formatDateForTicket, timeForInput, todayForInput } from './utils/formatDate'
 import { printTicket } from './utils/print'
-import { addTicket, getSettings, getTickets, nextTicketId } from './utils/storage'
+import { addTicket, getSessionTicketCount, getSettings, getTickets, nextTicketId } from './utils/storage'
 import { normalizePlate, validateTicketDraft } from './utils/validators'
 
 export class GarageAimarApp {
@@ -13,6 +13,7 @@ export class GarageAimarApp {
   private tickets: Ticket[] = []
   private settings: GarageSettings = getSettings()
   private selectedTicket: Ticket | null = null
+  private sessionTicketCount = getSessionTicketCount()
   private errors: string[] = []
   private message = ''
 
@@ -26,6 +27,7 @@ export class GarageAimarApp {
 
   private load(): void {
     this.tickets = getTickets()
+    this.sessionTicketCount = getSessionTicketCount()
     this.selectedTicket = this.tickets[0] ?? null
   }
 
@@ -45,7 +47,7 @@ export class GarageAimarApp {
             </div>
           </div>
           <div class="hero-stat" aria-label="Tickets guardados">
-            <strong>${this.tickets.length}</strong>
+            <strong>${this.sessionTicketCount}</strong>
             <span>tickets ingresados</span>
           </div>
         </header>
