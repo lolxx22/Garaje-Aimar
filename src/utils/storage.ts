@@ -3,6 +3,7 @@ import type { GarageSettings } from '../types/settings.types'
 import type { Ticket } from '../types/ticket.types'
 
 const TICKETS_KEY = 'garage-aimar:tickets'
+const TICKET_COUNTER_KEY = 'garage-aimar:ticket-counter'
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -42,10 +43,9 @@ export function getSettings(): GarageSettings {
 }
 
 export function nextTicketId(): string {
-  const highest = getTickets().reduce((max, ticket) => {
-    const number = Number(ticket.id.replace('TCK-', ''))
-    return Number.isFinite(number) ? Math.max(max, number) : max
-  }, 0)
+  const current = Number(sessionStorage.getItem(TICKET_COUNTER_KEY) ?? '0')
+  const next = Number.isFinite(current) ? current + 1 : 1
 
-  return `TCK-${String(highest + 1).padStart(4, '0')}`
+  sessionStorage.setItem(TICKET_COUNTER_KEY, String(next))
+  return `TCK-${String(next).padStart(4, '0')}`
 }
