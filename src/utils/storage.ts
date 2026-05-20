@@ -54,3 +54,7 @@ export function getSessionTicketCount(): number {
   const current = Number(sessionStorage.getItem(TICKET_COUNTER_KEY) ?? '0')
   return Number.isFinite(current) ? current : 0
 }
+
+export function resetSessionTicketCount(): void {
+  sessionStorage.removeItem(TICKET_COUNTER_KEY)
+}

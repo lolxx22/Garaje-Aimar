@@ -5,7 +5,7 @@ import type { GarageSettings } from './types/settings.types'
 import type { Ticket, TicketDraft } from './types/ticket.types'
 import { formatDateForTicket, timeForInput, todayForInput } from './utils/formatDate'
 import { printTicket } from './utils/print'
-import { addTicket, getSessionTicketCount, getSettings, getTickets, nextTicketId } from './utils/storage'
+import { addTicket, getSessionTicketCount, getSettings, getTickets, nextTicketId, resetSessionTicketCount } from './utils/storage'
 import { normalizePlate, validateTicketDraft } from './utils/validators'
 
 export class GarageAimarApp {
@@ -21,6 +21,7 @@ export class GarageAimarApp {
     const root = document.querySelector<HTMLElement>(selector)
     if (!root) throw new Error(`No se encontro el contenedor ${selector}`)
     this.root = root
+    resetSessionTicketCount()
     this.load()
     this.render()
   }
