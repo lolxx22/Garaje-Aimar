@@ -1,11 +1,16 @@
 @page {
-  size: var(--ticket-width) auto;
+  size: 58mm auto;
   margin: 0;
 }
 
 @media print {
+  :root {
+    --ticket-paper-width: 58mm;
+    --ticket-printable-width: 48mm;
+  }
+
   html, body {
-    width: var(--ticket-width);
+    width: var(--ticket-paper-width);
     min-width: 0;
     min-height: 0;
     height: auto;
@@ -26,8 +31,8 @@
   .layout-grid,
   .preview-card {
     display: block !important;
-    width: var(--ticket-width) !important;
-    max-width: var(--ticket-width) !important;
+    width: var(--ticket-paper-width) !important;
+    max-width: var(--ticket-paper-width) !important;
     margin: 0 !important;
     padding: 0 !important;
     border: 0 !important;
@@ -44,7 +49,7 @@
     left: 0;
     top: 0;
     display: block !important;
-    width: var(--ticket-width) !important;
+    width: var(--ticket-paper-width) !important;
     margin: 0 !important;
     padding: 0 !important;
     border: 0 !important;
@@ -52,56 +57,56 @@
   }
 
   .thermal-ticket {
-    width: var(--ticket-width) !important;
+    width: var(--ticket-printable-width) !important;
     min-height: 0 !important;
-    margin: 0 !important;
-    padding: 2.5mm 2mm !important;
+    margin: 0 auto !important;
+    padding: 1.5mm 1mm !important;
     border: 0 !important;
     box-shadow: none !important;
     color: #000 !important;
     background: #fff !important;
     font-family: "Courier New", monospace !important;
-    font-size: 8px !important;
+    font-size: 7.2px !important;
     font-weight: 900 !important;
   }
 
   .ticket-header h3 {
-    font-size: 10px !important;
-    margin-bottom: 4px !important;
+    font-size: 8.5px !important;
+    margin-bottom: 2px !important;
     font-weight: 900 !important;
   }
 
   .ticket-logo {
     display: block !important;
-    width: 14mm !important;
-    height: 14mm !important;
-    margin: 0 auto 1.8mm !important;
+    width: 10mm !important;
+    height: 10mm !important;
+    margin: 0 auto 1mm !important;
     object-fit: contain !important;
     filter: grayscale(1) contrast(2) !important;
     print-color-adjust: exact !important;
   }
 
   .ticket-header p, .rates-grid div, .notice, .warning, .thanks, .ticket-row {
-    font-size: 8px !important;
-    line-height: 1.2 !important;
+    font-size: 7.2px !important;
+    line-height: 1.1 !important;
     font-weight: 900 !important;
   }
 
   .ticket-plate-block {
-    margin: 2.2mm 0 !important;
-    padding: 1.6mm 0 !important;
+    margin: 1.5mm 0 !important;
+    padding: 1mm 0 !important;
     text-align: center !important;
   }
 
   .ticket-plate-block span {
-    font-size: 8px !important;
+    font-size: 7px !important;
     font-weight: 900 !important;
     letter-spacing: 0.2em !important;
   }
 
   .ticket-plate-block strong {
     display: block !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 900 !important;
     letter-spacing: 0.12em !important;
     line-height: 1 !important;
@@ -109,22 +114,21 @@
 
   .rates {
     display: grid !important;
-    gap: 1.1mm !important;
+    gap: 0.8mm !important;
   }
 
   .rates h4 {
     margin: 0 !important;
     text-align: center !important;
-    font-size: 8px !important;
+    font-size: 7.2px !important;
     font-weight: 900 !important;
     letter-spacing: 0.08em !important;
   }
 
   .rates-grid {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    column-gap: 1.3mm !important;
-    row-gap: 0.8mm !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 0.5mm !important;
   }
 
   .rates-grid div {
@@ -143,9 +147,9 @@
 
   .rates strong { font-weight: 900 !important; text-align: right !important; }
 
-  .warning { font-size: 7.5px !important; }
+  .warning { font-size: 6.8px !important; }
 
-  .ticket-row { margin: 4px 0 !important; }
-  .ticket-line { border-top: 1.5px dashed #000 !important; margin: 6px 0 !important; }
-  .thermal-ticket small { font-size: 7.5px !important; font-weight: 900 !important; }
+  .ticket-row { margin: 2.5px 0 !important; }
+  .ticket-line { border-top: 1px dashed #000 !important; margin: 4px 0 !important; }
+  .thermal-ticket small { font-size: 6.8px !important; font-weight: 900 !important; }
 }
