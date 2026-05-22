@@ -129,9 +129,13 @@
 
   .rates-grid div {
     display: grid !important;
-    grid-template-columns: max-content max-content !important;
-    justify-content: center !important;
-    gap: 0.8mm !important;
+    grid-template-columns: minmax(0, 1fr) auto !important;
+    gap: 0.5mm !important;
+  }
+
+  .rates-grid span {
+    overflow-wrap: anywhere !important;
+    line-height: 1.08 !important;
   }
 
   .rates strong { font-weight: 900 !important; text-align: right !important; }

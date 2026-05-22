@@ -290,7 +290,8 @@ input:focus, select:focus {
 .rates { display: grid; gap: 5px; text-align: left; }
 .rates h4 { margin: 0; text-align: center; font-size: 0.68rem; font-weight: 900; letter-spacing: 0.08em; }
 .rates-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4px; row-gap: 4px; }
-.rates-grid div { display: grid; grid-template-columns: max-content max-content; justify-content: center; gap: 3px; align-items: baseline; }
+.rates-grid div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px; align-items: start; }
+.rates-grid span { overflow-wrap: anywhere; line-height: 1.08; }
 .rates strong { font-weight: 900; text-align: right; }
 .notice, .warning, .thanks { text-align: center; font-weight: 900; }
 .warning { font-size: 0.62rem; }
