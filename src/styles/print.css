@@ -123,19 +123,21 @@
   .rates-grid {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    column-gap: 1mm !important;
-    row-gap: 1mm !important;
+    column-gap: 1.3mm !important;
+    row-gap: 0.8mm !important;
   }
 
   .rates-grid div {
-    display: grid !important;
-    grid-template-columns: minmax(0, max-content) auto !important;
-    justify-content: center !important;
-    gap: 0.3mm !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    gap: 0.6mm !important;
+    padding: 0 0.4mm !important;
   }
 
   .rates-grid span {
-    overflow-wrap: anywhere !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
     line-height: 1.08 !important;
   }
 
