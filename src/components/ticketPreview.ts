@@ -5,7 +5,7 @@ import { escapeHtml } from '../utils/escapeHtml'
 export function renderTicketPreview(ticket: Ticket | null, settings: GarageSettings): string {
   const empty = '<span class="ticket-empty">Pendiente</span>'
   const widthClass = 'ticket-58'
-  const logoUrl = `${import.meta.env.BASE_URL}logo.svg`
+  const logoUrl = `${import.meta.env.BASE_URL}logo.jpeg`
 
   return `
     <section class="card preview-card" aria-labelledby="preview-title">
