@@ -73,9 +73,9 @@
 
   .ticket-logo {
     display: block !important;
-    width: 11mm !important;
-    height: 11mm !important;
-    margin: 0 auto 1.6mm !important;
+    width: 14mm !important;
+    height: 14mm !important;
+    margin: 0 auto 1.8mm !important;
     object-fit: contain !important;
     filter: grayscale(1) contrast(2) !important;
     print-color-adjust: exact !important;
