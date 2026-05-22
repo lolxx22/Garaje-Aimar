@@ -242,11 +242,11 @@ input:focus, select:focus {
 
 .thermal-ticket {
   min-height: 420px;
-  padding: 13px 10px;
+  padding: 11px 7px;
   background: #fff;
   color: #111;
   font-family: "Courier New", ui-monospace, monospace;
-  font-size: 0.8rem;
+  font-size: 0.68rem;
   font-weight: 900;
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
 }
@@ -254,46 +254,46 @@ input:focus, select:focus {
 .ticket-header { text-align: center; }
 .ticket-logo {
   display: block;
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 8px;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 6px;
   object-fit: contain;
   filter: grayscale(1) contrast(1.35);
 }
-.ticket-header h3 { margin: 0 0 7px; font-size: 1.02rem; letter-spacing: 0.05em; font-weight: 900; }
-.ticket-header p, .rates-grid div, .notice, .warning, .thanks { margin: 4px 0; font-size: 0.78rem; line-height: 1.22; font-weight: 900; }
-.ticket-line { border-top: 1.5px dashed #111; margin: 10px 0; }
-.ticket-row { display: flex; justify-content: space-between; gap: 8px; margin: 7px 0; font-size: 0.8rem; font-weight: 900; }
+.ticket-header h3 { margin: 0 0 5px; font-size: 0.82rem; letter-spacing: 0.03em; font-weight: 900; }
+.ticket-header p, .rates-grid div, .notice, .warning, .thanks { margin: 3px 0; font-size: 0.64rem; line-height: 1.18; font-weight: 900; }
+.ticket-line { border-top: 1.5px dashed #111; margin: 8px 0; }
+.ticket-row { display: flex; justify-content: space-between; gap: 5px; margin: 5px 0; font-size: 0.66rem; font-weight: 900; }
 .ticket-row strong { text-align: left; }
 .ticket-row span { text-align: right; font-weight: 900; }
 .ticket-empty { color: #555; font-weight: 900; }
 .ticket-plate-block {
   display: grid;
-  gap: 7px;
-  margin: 11px 0;
-  padding: 9px 3px 10px;
+  gap: 5px;
+  margin: 9px 0;
+  padding: 7px 2px 8px;
   text-align: center;
 }
 .ticket-plate-block span {
-  font-size: 0.74rem;
+  font-size: 0.62rem;
   font-weight: 900;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.24em;
 }
 .ticket-plate-block strong {
   display: block;
-  font-size: 1.72rem;
+  font-size: 1.42rem;
   font-weight: 900;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   line-height: 1;
 }
-.rates { display: grid; gap: 7px; text-align: left; }
-.rates h4 { margin: 0; text-align: center; font-size: 0.82rem; font-weight: 900; letter-spacing: 0.12em; }
-.rates-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8px; row-gap: 5px; }
-.rates-grid div { display: grid; grid-template-columns: max-content max-content; justify-content: center; gap: 6px; align-items: baseline; }
+.rates { display: grid; gap: 5px; text-align: left; }
+.rates h4 { margin: 0; text-align: center; font-size: 0.68rem; font-weight: 900; letter-spacing: 0.08em; }
+.rates-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 4px; row-gap: 4px; }
+.rates-grid div { display: grid; grid-template-columns: max-content max-content; justify-content: center; gap: 3px; align-items: baseline; }
 .rates strong { font-weight: 900; text-align: right; }
 .notice, .warning, .thanks { text-align: center; font-weight: 900; }
-.warning { font-size: 0.74rem; }
-.thermal-ticket small { display: block; margin-top: 10px; text-align: center; font-weight: 900; }
+.warning { font-size: 0.62rem; }
+.thermal-ticket small { display: block; margin-top: 8px; text-align: center; font-size: 0.62rem; font-weight: 900; }
 
 .history-card { margin-top: 24px; }
 .table-wrap { overflow-x: auto; }
