@@ -4,7 +4,7 @@ import { escapeHtml } from '../utils/escapeHtml'
 
 export function renderTicketPreview(ticket: Ticket | null, settings: GarageSettings): string {
   const empty = '<span class="ticket-empty">Pendiente</span>'
-  const widthClass = 'ticket-80'
+  const widthClass = 'ticket-58'
   const logoUrl = `${import.meta.env.BASE_URL}logo.svg`
 
   return `

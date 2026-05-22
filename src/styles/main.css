@@ -11,7 +11,7 @@
   --accent-2: #8de2d2;
   --danger: #ff6b6b;
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
-  --ticket-width: 80mm;
+  --ticket-width: 58mm;
 }
 
 * { box-sizing: border-box; }
@@ -238,7 +238,7 @@ input:focus, select:focus {
 
 .preview-card { position: sticky; top: 20px; }
 .ticket-shell { display: flex; justify-content: center; padding: 20px; border-radius: 22px; background: #0b1220; border: 1px dashed rgba(157, 183, 255, 0.24); }
-.ticket-80 .thermal-ticket { width: 80mm; }
+.ticket-58 .thermal-ticket { width: 58mm; }
 
 .thermal-ticket {
   min-height: 420px;

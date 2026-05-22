@@ -1,4 +1,4 @@
-export type TicketWidth = '80mm'
+export type TicketWidth = '58mm'
 
 export interface GarageSettings {
   garageName: string
