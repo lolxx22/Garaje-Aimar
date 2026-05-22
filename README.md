@@ -1,4 +1,4 @@
-# Garage Aimar - Parking Ticket
+# Garaje Aimar - Parking Ticket
 
 Sistema web profesional para generar, guardar e imprimir tickets de ingreso para un garaje/parqueadero. Está construido con HTML5, CSS3, TypeScript y Vite, sin backend ni base de datos tradicional.
 
@@ -13,7 +13,7 @@ Sistema web profesional para generar, guardar e imprimir tickets de ingreso para
 - Impresión con `window.print()` y CSS `@media print`.
 - Impresión exclusiva del ticket, sin formulario ni botones.
 - Tickets guardados internamente como JSON en `localStorage`.
-- Tarjeta fija con la información de Garage Aimar.
+- Tarjeta fija con la información de Garaje Aimar.
 - Dashboard oscuro, responsive y moderno.
 
 ## AutoSkills
@@ -72,7 +72,7 @@ parking-ticket/
 - `src/styles`: estilos visuales del dashboard y reglas optimizadas de impresión POS.
 - `src/types`: contratos TypeScript para tickets y datos del garaje.
 - `src/utils`: localStorage, impresión, fechas y validaciones.
-- `src/data`: información predeterminada de Garage Aimar.
+- `src/data`: información predeterminada de Garaje Aimar.
 - `public`: archivos estáticos como logo.
 
 ## Instalación

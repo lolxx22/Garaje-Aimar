@@ -39,10 +39,10 @@ export class GarageAimarApp {
       <main class="app-shell">
         <header class="hero-panel">
           <div class="brand-block">
-            <img class="brand-logo" src="${import.meta.env.BASE_URL}logo.jpeg" alt="Logo de Garage Aimar" width="72" height="72" />
+            <img class="brand-logo" src="${import.meta.env.BASE_URL}logo.jpeg" alt="Logo de Garaje Aimar" width="72" height="72" />
             <div>
               <span class="eyebrow"></span>
-              <h1>Garage Aimar</h1>
+              <h1>Garaje Aimar</h1>
               <p class="hero-tagline">Protección y seguridad para tu vehículo, 24/7.</p>
               <p>Genera, guarda e imprime tus tickets de manera segura.</p>
             </div>
