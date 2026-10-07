@@ -66,7 +66,7 @@
     color: #000 !important;
     background: #fff !important;
     font-family: "Courier New", monospace !important;
-    font-size: 7.2px !important;
+    font-size: 8px !important;
     font-weight: 900 !important;
   }
 
@@ -86,9 +86,9 @@
     print-color-adjust: exact !important;
   }
 
-  .ticket-header p, .rates-grid div, .notice, .warning, .thanks, .ticket-row {
-    font-size: 7.2px !important;
-    line-height: 1.1 !important;
+  .ticket-header p, .rates-grid div, .ticket-row {
+    font-size: 8px !important;
+    line-height: 1.15 !important;
     font-weight: 900 !important;
   }
 
@@ -120,7 +120,7 @@
   .rates h4 {
     margin: 0 !important;
     text-align: center !important;
-    font-size: 7.2px !important;
+    font-size: 8px !important;
     font-weight: 900 !important;
     letter-spacing: 0.08em !important;
   }
@@ -147,9 +147,37 @@
 
   .rates strong { font-weight: 900 !important; text-align: right !important; }
 
-  .warning { font-size: 6.8px !important; }
+  .ticket-entry-time {
+    display: grid !important;
+    justify-content: stretch !important;
+    gap: 1mm !important;
+    margin: 2.5mm 0 !important;
+    text-align: center !important;
+  }
 
-  .ticket-row { margin: 2.5px 0 !important; }
+  .ticket-entry-time strong {
+    text-align: center !important;
+    font-size: 8.5px !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  .ticket-entry-time span {
+    text-align: center !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .notice, .warning, .thanks {
+    margin: 1.2mm 0 !important;
+    font-size: 8.5px !important;
+    line-height: 1.2 !important;
+    font-weight: 900 !important;
+  }
+
+  .thanks { font-size: 9px !important; }
+
+  .ticket-row { margin: 3.5px 0 !important; }
   .ticket-line { border-top: 1px dashed #000 !important; margin: 4px 0 !important; }
-  .thermal-ticket small { font-size: 6.8px !important; font-weight: 900 !important; }
+  .thermal-ticket small { margin-top: 2mm !important; font-size: 8.5px !important; font-weight: 900 !important; }
 }

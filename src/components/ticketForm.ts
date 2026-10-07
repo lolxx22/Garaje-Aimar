@@ -29,9 +29,9 @@ export function renderTicketForm(errors: string[] = [], message = '', canPrint =
           </div>
         </div>
         <div class="actions">
-          <button class="btn btn-primary" type="submit">Generar ticket</button>
+          <button class="btn btn-primary" type="button" id="print-ticket" ${canPrint ? '' : 'disabled'}>Imprimir ticket</button>
           <button class="btn btn-ghost" type="reset" id="clear-form">Limpiar formulario</button>
-          <button class="btn btn-secondary" type="button" id="print-ticket" ${canPrint ? '' : 'disabled'}>Imprimir ticket</button>
+          <button class="btn btn-secondary" type="submit">Generar ticket</button>
         </div>
       </form>
     </section>

@@ -247,7 +247,7 @@ input:focus, select:focus {
   background: #fff;
   color: #111;
   font-family: "Courier New", ui-monospace, monospace;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 900;
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
 }
@@ -262,11 +262,20 @@ input:focus, select:focus {
   filter: grayscale(1) contrast(1.35);
 }
 .ticket-header h3 { margin: 0 0 5px; font-size: 0.82rem; letter-spacing: 0.03em; font-weight: 900; }
-.ticket-header p, .rates-grid div, .notice, .warning, .thanks { margin: 3px 0; font-size: 0.64rem; line-height: 1.18; font-weight: 900; }
+.ticket-header p, .rates-grid div { margin: 3px 0; font-size: 0.68rem; line-height: 1.2; font-weight: 900; }
 .ticket-line { border-top: 1.5px dashed #111; margin: 8px 0; }
-.ticket-row { display: flex; justify-content: space-between; gap: 5px; margin: 5px 0; font-size: 0.66rem; font-weight: 900; }
+.ticket-row { display: flex; justify-content: space-between; gap: 5px; margin: 6px 0; font-size: 0.7rem; font-weight: 900; }
 .ticket-row strong { text-align: left; }
 .ticket-row span { text-align: right; font-weight: 900; }
+.ticket-entry-time {
+  display: grid;
+  justify-content: stretch;
+  gap: 4px;
+  margin: 10px 0;
+  text-align: center;
+}
+.ticket-entry-time strong { text-align: center; font-size: 0.72rem; letter-spacing: 0.06em; }
+.ticket-entry-time span { text-align: center; font-size: 1.2rem; line-height: 1; letter-spacing: 0.1em; }
 .ticket-empty { color: #555; font-weight: 900; }
 .ticket-plate-block {
   display: grid;
@@ -293,9 +302,9 @@ input:focus, select:focus {
 .rates-grid div { display: flex; justify-content: space-between; gap: 3px; align-items: baseline; padding: 0 2px; }
 .rates-grid span { flex: 1 1 auto; min-width: 0; line-height: 1.08; }
 .rates strong { font-weight: 900; text-align: right; }
-.notice, .warning, .thanks { text-align: center; font-weight: 900; }
-.warning { font-size: 0.62rem; }
-.thermal-ticket small { display: block; margin-top: 8px; text-align: center; font-size: 0.62rem; font-weight: 900; }
+.notice, .warning, .thanks { margin: 5px 0; text-align: center; font-size: 0.72rem; line-height: 1.22; font-weight: 900; }
+.thanks { font-size: 0.78rem; }
+.thermal-ticket small { display: block; margin-top: 9px; text-align: center; font-size: 0.72rem; font-weight: 900; }
 
 .history-card { margin-top: 24px; }
 .table-wrap { overflow-x: auto; }
